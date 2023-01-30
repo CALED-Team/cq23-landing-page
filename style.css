@@ -106,8 +106,19 @@ header > img {
     max-width: 100%;
     max-height: calc(100% - 20px);
     margin: 10px;
-    /* max-width: 100px; */
-    /* max-height: 100px; */
+}
+
+header nav {
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
 }
 
 header + * {
