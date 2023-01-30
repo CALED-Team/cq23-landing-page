@@ -63,3 +63,15 @@ small,
 .text_small {
     font-size: 0.75rem;
 }
+
+section {
+    min-width: 350px;
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
