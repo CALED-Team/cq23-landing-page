@@ -18,6 +18,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "16.x"
+      - run: npm install
       - run: ./build.sh
       - run: node sync.js '${{ secrets.HOST_FTP_USERNAME }}' '${{ secrets.HOST_FTP_PASSWORD }}' 'pr-${{github.event.number}}'
         if: github.event_name == 'pull_request'
