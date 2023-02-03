@@ -20,7 +20,6 @@ jobs:
           node-version: "16.x"
       - run: npm install
       - run: ./build.sh
-      - run: echo ${{github.event_name}}
       - run: node sync.js '${{ secrets.PREVIEW_FTP_USERNAME }}' '${{ secrets.PREVIEW_FTP_PASSWORD }}' 'pr-${{github.event.number}}'
         if: github.event_name == 'pull_request'
       - uses: actions/github-script@v5
