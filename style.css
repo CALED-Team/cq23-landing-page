@@ -211,6 +211,7 @@ section.hero .hero-content h1 {
 
 
 .accordion {
+    margin: 20px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
@@ -219,18 +220,26 @@ section.hero .hero-content h1 {
 .tab {
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid grey;
     transition: 0.2s;
 }
 
 .tab-head, .tab-body {
     padding: 20px;
     transition: 0.2s;
+    
 }
 
 .tab-head {
-    padding: 20px;
-    background: grey;
+    position: relative;
+    background: rgb(201, 201, 201);
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid grey;
+}
+
+.tab-body {
+    border: 1px solid grey;
+    border-top: none;
 }
 
 .tab:not(.tab-open) .tab-body {
@@ -238,4 +247,26 @@ section.hero .hero-content h1 {
     height: 0;
     padding-top: 0;
     padding-bottom: 0;
+    border-bottom: none;
+}
+
+.tab-head::after {
+    content: ">";
+    position: absolute;
+    top: calc(50% - 1.2ch);
+    right: 20px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
+.tab-open .tab-head::after {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
