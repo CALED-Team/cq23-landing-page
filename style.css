@@ -208,3 +208,34 @@ section.hero .hero-content h1 {
         0px 4px 0px grey, 0px 5px 0px var(--primary-light),
         0px 6px 0px var(--primary-light), 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
+
+
+.accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid grey;
+    transition: 0.2s;
+}
+
+.tab-head, .tab-body {
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.tab-head {
+    padding: 20px;
+    background: grey;
+}
+
+.tab:not(.tab-open) .tab-body {
+    overflow: hidden;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
