@@ -22,7 +22,7 @@ function update_accordion(accordion_index, tab_index) {
 }
 
 accordions.forEach((accordion, acc_index) => {
-    accordion.querySelectorAll(".tab").forEach((tab, tab_index) => {
+    accordion.querySelectorAll(".tab-head").forEach((tab, tab_index) => {
         tab.addEventListener("click", () => {
             update_accordion(acc_index, tab_index);
         });
