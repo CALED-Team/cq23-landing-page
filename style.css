@@ -182,6 +182,7 @@ header + * {
 }
 
 section.hero {
+    min-height: 40.6vw;
 }
 
 section.hero video {
