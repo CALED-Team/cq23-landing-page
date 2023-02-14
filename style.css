@@ -188,6 +188,9 @@ section.hero {
 section.hero video {
     max-width: 100%;
     max-height: 100%;
+    min-width: 100%;
+    min-height: 80vh;
+    object-fit: cover;
 }
 
 section.hero .hero-content {
