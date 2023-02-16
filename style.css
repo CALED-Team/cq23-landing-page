@@ -79,7 +79,8 @@ small,
 }
 
 header,
-section {
+section, 
+footer {
     position: relative;
 }
 
@@ -332,4 +333,27 @@ section.hero .hero-content h1 {
 
 .schedule-item-body > strong:first-child {
     border-bottom: 1px solid var(--black);  
+}
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    padding-bottom: 80px;
+}
+
+footer h5 {
+    color: var(--secondary-light);
+}
+
+footer .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+footer .section-content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
