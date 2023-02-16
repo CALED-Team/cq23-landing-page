@@ -182,11 +182,15 @@ header + * {
 }
 
 section.hero {
+    min-height: 40.6vw;
 }
 
 section.hero video {
     max-width: 100%;
     max-height: 100%;
+    min-width: 100%;
+    min-height: 80vh;
+    object-fit: cover;
 }
 
 section.hero .hero-content {
@@ -207,4 +211,66 @@ section.hero .hero-content h1 {
         0px 2px 0px grey, 0px 3px 0px grey,
         0px 4px 0px grey, 0px 5px 0px var(--primary-light),
         0px 6px 0px var(--primary-light), 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.accordion {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: 0.2s;
+}
+
+.tab-head, .tab-body {
+    padding: 20px;
+    transition: 0.2s;
+    
+}
+
+.tab-head {
+    position: relative;
+    background: rgb(201, 201, 201);
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid grey;
+}
+
+.tab-body {
+    border: 1px solid grey;
+    border-top: none;
+}
+
+.tab:not(.tab-open) .tab-body {
+    overflow: hidden;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.tab-head::after {
+    content: ">";
+    position: absolute;
+    top: calc(50% - 1.2ch);
+    right: 20px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
+.tab-open .tab-head::after {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
