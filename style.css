@@ -357,3 +357,22 @@ footer .section-content > div {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+footer span {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+footer .icon {
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    margin: 5px;
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 0;
+    min-width: 0;
+}
+
+}
