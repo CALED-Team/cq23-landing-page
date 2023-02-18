@@ -207,12 +207,10 @@ section.hero .hero-content {
 }
 
 section.hero .hero-content h1 {
-    text-shadow: 0px 1px 0px grey,
-        0px 2px 0px grey, 0px 3px 0px grey,
+    text-shadow: 0px 1px 0px grey, 0px 2px 0px grey, 0px 3px 0px grey,
         0px 4px 0px grey, 0px 5px 0px var(--primary-light),
         0px 6px 0px var(--primary-light), 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
-
 
 .accordion {
     margin: 20px;
@@ -227,10 +225,10 @@ section.hero .hero-content h1 {
     transition: 0.2s;
 }
 
-.tab-head, .tab-body {
+.tab-head,
+.tab-body {
     padding: 20px;
     transition: 0.2s;
-    
 }
 
 .tab-head {
@@ -273,4 +271,29 @@ section.hero .hero-content h1 {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
+}
+
+.prizes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    align-items: flex-end;
+}
+
+.prize {
+    padding: 20px;
+    text-align: center;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.prize img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0px 10px 8px grey);
+}
+
+.prize h4 {
+    color: var(--secondary);
 }
