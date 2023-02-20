@@ -37,6 +37,3 @@ jobs:
       - name: "Publish to preview"
         run: node sync.js '${{ secrets.PREVIEW_FTP_USERNAME }}' '${{ secrets.PREVIEW_FTP_PASSWORD }}' .
         if: github.event_name != 'pull_request'
-      - name: "Publish to main website"
-        run: node sync.js '${{ secrets.PROD_FTP_USERNAME }}' '${{ secrets.PROD_FTP_PASSWORD }}' .
-        if: github.event_name != 'pull_request'
