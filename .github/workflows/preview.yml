@@ -20,7 +20,8 @@ jobs:
           node-version: "16.x"
       - run: npm install
       - run: ./build.sh
-      - run: node sync.js '${{ secrets.PREVIEW_FTP_USERNAME }}' '${{ secrets.PREVIEW_FTP_PASSWORD }}' 'pr-${{github.event.number}}'
+      - name: "Publish PR Review"
+        run: node sync.js '${{ secrets.PREVIEW_FTP_USERNAME }}' '${{ secrets.PREVIEW_FTP_PASSWORD }}' 'pr-${{github.event.number}}'
         if: github.event_name == 'pull_request'
       - uses: actions/github-script@v5
         if: github.event_name == 'pull_request'
@@ -33,6 +34,9 @@ jobs:
               repo: context.repo.repo,
               body: 'Preview at https://preview.codequest.club/pr-${{github.event.number}}'
             })
-      - run: node sync.js '${{ secrets.PREVIEW_FTP_USERNAME }}' '${{ secrets.PREVIEW_FTP_PASSWORD }}' .
+      - name: "Publish to preview"
+        run: node sync.js '${{ secrets.PREVIEW_FTP_USERNAME }}' '${{ secrets.PREVIEW_FTP_PASSWORD }}' .
         if: github.event_name != 'pull_request'
-
+      - name: "Publish to main website"
+        run: node sync.js '${{ secrets.PROD_FTP_USERNAME }}' '${{ secrets.PROD_FTP_PASSWORD }}' .
+        if: github.event_name != 'pull_request'
