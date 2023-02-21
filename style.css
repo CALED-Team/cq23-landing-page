@@ -513,6 +513,7 @@ span.arrow {
     cursor: pointer;
     transition: 0.2s;
     user-select: none;
+    min-width: max-content;
 }
 
 .gallery-image .right-arrow:hover, .gallery-image .left-arrow:hover {
