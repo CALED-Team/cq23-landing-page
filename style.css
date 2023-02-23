@@ -308,6 +308,12 @@ section.hero .hero-content h1 {
     row-gap: 10px;
 }
 
+@media screen and (max-width: 500px) {
+    .accordion {
+        margin: 0;
+    }
+}
+
 .tab {
     display: grid;
     grid-template-columns: 1fr;
@@ -326,6 +332,7 @@ section.hero .hero-content h1 {
     cursor: pointer;
     user-select: none;
     border: 1px solid grey;
+    padding-right: 50px;
 }
 
 .tab-body {
