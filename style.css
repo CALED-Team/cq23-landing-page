@@ -448,7 +448,6 @@ footer .icon {
 .prizes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
     align-items: flex-end;
 }
 
@@ -468,6 +467,24 @@ footer .icon {
 
 .prize h4 {
     color: var(--secondary);
+}
+
+@media screen and (max-width: 620px) {
+    .prizes {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
+
+    .prize {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .prize h4 {
+        font-size: 200%;
+        margin-top: 1rem;
+    }
 }
 
 .hero-content span.date {
