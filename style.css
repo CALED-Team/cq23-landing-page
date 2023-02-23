@@ -431,13 +431,14 @@ footer h5 {
     color: var(--secondary-light);
 }
 
-footer .section-content {
+footer .section-content-small {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
 }
 
-footer .section-content > div {
+
+footer .section-content-small > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -451,14 +452,33 @@ footer span {
 }
 
 footer .icon {
-    position: absolute;
-    left: -32px;
-    top: 6px;
-    margin: 5px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+    margin-right: 15px;
     max-width: 30px;
     max-height: 30px;
-    min-height: 0;
-    min-width: 0;
+}
+
+@media screen and (max-width: 780px) {
+    footer .section-content-small {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 20px;
+    }
+
+    footer .section-content-small > div {
+        align-items: center;
+        position: relative;
+    }
+
+    footer span {
+        max-width: max-content;
+    }
+    
+    footer .section-content-small * {
+        text-align: center;
+    }
 }
 
 .prizes {
