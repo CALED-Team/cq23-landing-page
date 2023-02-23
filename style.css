@@ -421,6 +421,14 @@ section.hero .hero-content h1 {
     border-bottom: 1px solid var(--black);  
 }
 
+@media screen and (max-width: 700px) {
+    .schedule-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 15px;
+    }
+}
+
 footer {
     background: var(--black);
     color: var(--white);
