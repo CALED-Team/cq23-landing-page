@@ -257,6 +257,12 @@ section.hero video {
     object-fit: cover;
 }
 
+@media screen and (max-width: 500px) {
+    section.hero video {
+        object-position: 40%;
+    }
+}
+
 section.hero .hero-content {
     position: absolute;
     top: 0;
