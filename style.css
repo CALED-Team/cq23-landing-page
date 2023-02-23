@@ -266,6 +266,10 @@ section.hero .hero-content h1 {
         0px 6px 0px var(--primary-light), 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
+.hero-content span {
+    margin: 10px 0px;
+}
+
 .accordion {
     margin: 20px;
     display: grid;
@@ -454,7 +458,7 @@ footer .icon {
 .hero-content span.date {
     font-size: 130%;
     color: var(--secondary);
-    margin: 20px;
+    margin: 20px 0px;
     font-weight: bold;
     text-shadow: 0px 0px 5px black, 0px 0px 5px black;
 }
