@@ -623,6 +623,19 @@ span.arrow {
     column-gap: 20px;
 }
 
+@media screen and (max-width: 1250px) {
+    .gallery-image {
+        width: calc(100vw - 2 * var(--padding-x));
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .gallery-image {
+        width: calc(100vw - 10px);
+        column-gap: 10px;
+    }
+}
+
 .gallery-image img {
     min-width: 0;
     min-height: 0;
