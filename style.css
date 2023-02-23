@@ -406,6 +406,7 @@ section.hero .hero-content h1 {
 .schedule-item {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
 }
 
 .schedule-date {
@@ -418,7 +419,7 @@ section.hero .hero-content h1 {
 
 .schedule-item-body {
     border-left: 5px solid var(--primary-light);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     background: rgb(247, 245, 245);
@@ -433,6 +434,11 @@ section.hero .hero-content h1 {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         row-gap: 15px;
+    }
+
+    .schedule-item-body {
+        border-left: none;
+        border-top: 5px solid var(--primary-light);
     }
 }
 
