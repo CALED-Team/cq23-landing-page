@@ -558,6 +558,7 @@ footer .icon {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: min-content;
     column-gap: 40px;
 }
 
@@ -628,6 +629,7 @@ span.arrow {
 .mystery-video {
     min-width: 100%;
     flex-grow: 1;
+    /* height: calc(0.67 * 100%);  */
     background: black;
     border-radius: 14px;
     position: relative;
