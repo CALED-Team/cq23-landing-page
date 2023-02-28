@@ -6,10 +6,15 @@
         <title>Code Quest 23</title>
         <link rel="stylesheet" href="font_imports.css" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
     </head>
     <body>
         <header>
-            <img src="assets/logo/Q1.png" alt="CodeQuest Logo" />
+            <img class="logo-desktop" src="assets/logo/Q1.png" alt="CodeQuest Logo" />
+            <img class="logo-mobile" src="assets/logo/Q2.png" alt="CodeQuest Logo" />
             <nav class="main-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -29,7 +34,7 @@
         </header>
 
         <section class="hero">
-            <video
+            <video class="desktop-video"
                 autoplay
                 muted
                 loop
@@ -37,6 +42,17 @@
             >
                 <source
                     src="https://cq-main-website.s3.ap-southeast-2.amazonaws.com/landing-page/site_header_264.mp4"
+                    type="video/mp4"
+                />
+            </video>
+            <video class="mobile-video"
+                autoplay
+                muted
+                loop
+                poster="https://cq-main-website.s3.ap-southeast-2.amazonaws.com/landing-page/site-header-image.jpg"
+            >
+                <source
+                    src="https://cq-main-website.s3.ap-southeast-2.amazonaws.com/landing-page/side_header_vertical.mp4"
                     type="video/mp4"
                 />
             </video>
@@ -51,7 +67,7 @@
         </section>
 
         <section id="about">
-            <div class="section-content">
+            <div class="section-content-small">
                 <h2>What is CodeQuest?</h2>
                 <p>
                     Every year we create a new game that no one has seen before.
@@ -136,7 +152,7 @@
 
         <section id="faqs">
             <div class="section-content">
-                <h2>Frequently Asked Questions</h2>
+                <h2>FAQs</h2>
                 <div class="accordion">
                     <div class="tab">
                         <div class="tab-head">
@@ -260,7 +276,7 @@
 
         <section id="schedule">
             <div class="section-content">
-                <h2>CodeQuest Schedule</h2>
+                <h2>Schedule</h2>
                 <div class="schedule">
                     <div class="schedule-head">
                         <div class="schedule-tab schedule-tab-active">
@@ -446,13 +462,13 @@
 
         <!-- <section id="sponsors">
             <div class="section-content">
-                <h2>CodeQuest Sponsors</h2>
+                <h2>Sponsors</h2>
                 <p></p>
             </div>
         </section> -->
 
         <footer>
-            <div class="section-content">
+            <div class="section-content-small">
                 <div>
                     <h5>Contact</h5>
                     <span
