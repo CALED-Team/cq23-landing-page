@@ -745,3 +745,46 @@ span.arrow {
 .gallery-image-select li:hover, .gallery-image-select li.active-image {
     background: var(--primary);
 }
+
+
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-closed {
+    display: none;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    background: var(--white);
+    padding: 60px 60px 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content button {
+    width: max-content;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .popup-content {
+        padding: 40px 40px 20px;
+        row-gap: 20px;
+    }
+}
