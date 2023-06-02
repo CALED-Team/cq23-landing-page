@@ -481,6 +481,11 @@ footer .icon {
     max-height: 30px;
 }
 
+.socials-link {
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width: 780px) {
     footer .section-content-small {
         grid-template-columns: 1fr;
