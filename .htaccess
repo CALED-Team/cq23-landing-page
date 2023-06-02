@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^codequest\.club$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.codequest\.club$
+RewriteRule ^discord$ "https\:\/\/discord\.gg\/EhKBgUZ48z" [R=301,L]
+

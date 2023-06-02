@@ -12,3 +12,4 @@ cp favicon-16x16.png build
 cp favicon-32x32.png build
 cp favicon.ico build
 cp site.webmanifest build
+cp .htaccess build
