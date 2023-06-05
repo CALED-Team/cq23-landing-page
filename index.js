@@ -140,17 +140,17 @@ document
 /*
 Registration popup logic
 */
-document.querySelectorAll(".registration-btn").forEach((element) => {
-    element.addEventListener("click", (event) => {
-        document.querySelector(".popup-bg").classList.remove("popup-closed");
-        event.preventDefault();
-    })
-})
-
-document.querySelectorAll(".popup-close").forEach((element) => {
-    element.addEventListener("click", () => {
-        document.querySelector(".popup-bg").classList.add("popup-closed");
-    })
-})
-
-document.querySelector(".popup-content").onclick = (event) => event.stopPropagation()
+//document.querySelectorAll(".registration-btn").forEach((element) => {
+//    element.addEventListener("click", (event) => {
+//        document.querySelector(".popup-bg").classList.remove("popup-closed");
+//        event.preventDefault();
+//    })
+//})
+//
+//document.querySelectorAll(".popup-close").forEach((element) => {
+//    element.addEventListener("click", () => {
+//        document.querySelector(".popup-bg").classList.add("popup-closed");
+//    })
+//})
+//
+//document.querySelector(".popup-content").onclick = (event) => event.stopPropagation()
