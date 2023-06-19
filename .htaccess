@@ -3,4 +3,7 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^codequest\.club$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.codequest\.club$
 RewriteRule ^discord$ "https\:\/\/discord\.gg\/EhKBgUZ48z" [R=301,L]
+RewriteCond %{HTTP_HOST} ^codequest\.club$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.codequest\.club$
+RewriteRule ^teaser$ "https\:\/\/cq\-main\-website\.s3\.ap\-southeast\-2\.amazonaws\.com\/2\.mp4" [R=301,L]
 
