@@ -13,3 +13,4 @@ cp favicon-32x32.png build
 cp favicon.ico build
 cp site.webmanifest build
 cp .htaccess build
+cp the-secret-page-091823.html build
